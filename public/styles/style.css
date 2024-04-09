@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+/* Quienes Somos */
+
+.quienesSomos{
+  height: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.contenidoQuienesSomos{
+  width: 90%;
+  margin:auto;
+  display:flex;
+  gap:5vw;
+  font-family: 'Montserrat';
+  color:#3A3939;
+}
+
+.contenidoQuienesSomos > h2{
+  font-size: 4rem;
+  text-align: right;
+}
+
+.contenidoQuienesSomos > p{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Fin Quienes Somos */
+
+/* ------------------------------------------- */
+
+/* Nuestros Pilares */
+
+.nuestrosPilares{
+  height: auto;
+  margin-top: 10vh;
+}
+
+.contenidoNuestrosPilares{
+  width: 90%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  gap:3vh;
+  font-family: 'Montserrat';
+  color:#3A3939;
+}
+
+.tituloNuestrosPilares{
+  text-align: center;
+}
+
+.tituloNuestrosPilares > h2{
+  font-size: 4rem;
+}
+
+.pilares{
+  display:flex;
+  width: 100%;
+  gap:4vw;
+  justify-content: space-between;
+}
+
+.pilar{
+  width: 25%;
+  padding:40px;
+  background-color: #e2e2e2;
+  border-radius: 16px;
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.pilar > h3{
+  font-size: 30px;
+}
+
+.pilar > p{
+  font-size: 20px;
+}
+
+/* Fin Nuestros Pilares */
