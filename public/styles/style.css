@@ -1,3 +1,52 @@
+:root {
+  --color-dark-rgb: 0, 0, 0;
+  --color-dark: rgba(var(--color-dark-rgb), 1);
+  --color-light-rgb: 245, 247, 250;
+  --color-light: rgba(var(--color-light-rgb), 1);
+  --color-white-rgb: 255, 255, 255;
+  --color-white: rgba(var(--color-white-rgb), 1);
+  --color-black-rgb: 0, 0, 0;
+  --color-black: rgba(var(--color-black-rgb), 1);
+  --e-global-color-text: #172228;
+  --e-global-color-accent: #f6632f;
+  --e-global-color-777e6ab: #fb9c5c;
+  --e-global-color-4634ee8: #ffffff;
+  --color-secondary: #ffe600;
+  --color-gray: #c1c3c7;
+  --color-lightgray: #e6e8eb;
+  --color-border-rgb: 159, 161, 163;
+  --color-border: rgba(var(--color-border-rgb), 0.225);
+  --color-border-600: rgba(var(--color-border-rgb), 0.35);
+  --color-border-800: rgba(var(--color-border-rgb), 0.45);
+  --color-border-900: rgba(var(--color-border-rgb), 1);
+  --color-border-light: var(--color-border-light);
+  --color-text: rgba(var(--color-dark-rgb), 0.7);
+  --color-text-light: rgba(var(--color-light-rgb), 0.7);
+  --color-alert-error: var(--color-primary);
+  --color-alert-success: #46d054;
+  --animation-primary: 0.4s cubic-bezier(0.75, 0, 0.25, 1);
+  --animation-fast: 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+  --animation-smooth: 0.6s cubic-bezier(0.75, 0, 0.25, 1);
+  --animation-navigation: 1.2s cubic-bezier(0.75, 0, 0.25, 1);
+  --animation-navigation: 0.6s cubic-bezier(0.6, 0, 0.4, 1);
+  --animation-navigation-forward: 1s cubic-bezier(0.8, 0, 0.1, 1);
+  --animation-navigation-backward: 0.6s cubic-bezier(0.8, 0, 0.1, 1);
+  --animation-navigation-fade: 0.3s ease-in-out;
+  --section-padding: min(9vw, 9em);
+  --container-padding: var(--col-gap);
+  --row-padding: clamp(2em, 4vw, 4em);
+  --col-padding: clamp(2em, 4vw, 4em);
+  --row-gap: max(1.75em, 1.75vw);
+  --col-gap: max(1.75em, 1.75vw);
+  --title-size: max(5em, 7.5vw);
+  --border-radius: 0.35em;
+  --main-navigation-height: 4.6em;
+  --gap-texts: 2vh;
+  --margin-sections: 20vh;
+  --single-grid-col: calc((99.99vw - (var(--col-gap) * 2)) / 4);
+  /* #FE4F31 */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,27 +58,27 @@ body {
 
 /* Quienes Somos */
 
-.quienesSomos{
+.quienesSomos {
   height: auto;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
-.contenidoQuienesSomos{
+.contenidoQuienesSomos {
   width: 90%;
-  margin:auto;
-  display:flex;
-  gap:5vw;
-  font-family: 'Montserrat';
-  color:#3A3939;
+  margin: auto;
+  display: flex;
+  gap: 5vw;
+  font-family: "Montserrat";
+  color: #3a3939;
 }
 
-.contenidoQuienesSomos > h2{
+.contenidoQuienesSomos > h2 {
   font-size: 4rem;
   text-align: right;
 }
 
-.contenidoQuienesSomos > p{
+.contenidoQuienesSomos > p {
   font-size: 20px;
   font-weight: 400;
 }
@@ -40,52 +89,318 @@ body {
 
 /* Nuestros Pilares */
 
-.nuestrosPilares{
+.nuestrosPilares {
   height: auto;
   margin-top: 10vh;
 }
 
-.contenidoNuestrosPilares{
+.contenidoNuestrosPilares {
   width: 90%;
-  margin:auto;
-  display:flex;
+  margin: auto;
+  display: flex;
   flex-direction: column;
-  gap:3vh;
-  font-family: 'Montserrat';
-  color:#3A3939;
+  gap: 3vh;
+  font-family: "Montserrat";
+  color: #3a3939;
 }
 
-.tituloNuestrosPilares{
+.tituloNuestrosPilares {
   text-align: center;
 }
 
-.tituloNuestrosPilares > h2{
+.tituloNuestrosPilares > h2 {
   font-size: 4rem;
 }
 
-.pilares{
-  display:flex;
+.pilares {
+  display: flex;
   width: 100%;
-  gap:4vw;
+  gap: 4vw;
   justify-content: space-between;
 }
 
-.pilar{
+.pilar {
   width: 25%;
-  padding:40px;
+  padding: 40px;
   background-color: #e2e2e2;
   border-radius: 16px;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  gap:30px;
+  gap: 30px;
 }
 
-.pilar > h3{
+.pilar > h3 {
   font-size: 30px;
 }
 
-.pilar > p{
+.pilar > p {
   font-size: 20px;
 }
 
 /* Fin Nuestros Pilares */
+
+/* ------------------------------------------- */
+
+/* Probando Servicios */
+
+.bestProjects {
+  margin-top: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.pin-spacer {
+  margin-top: 0 !important;
+}
+
+.containerBestProjects {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-texts);
+  font-family: "Montserrat";
+  color: #3a3939;
+
+  /* h2 {
+    font-family: "MonumentExtended", "sans-serif";
+    font-size: calc(var(--title-size) * 1);
+    font-weight: bold;
+    color:#3a3939;
+    line-height: 82%;
+  }
+
+  p {
+    font-family: "Space Grotesk", "sans-serif";
+    font-size: calc(var(--title-size) * 0.3);
+    color:#3a3939;
+  } */
+}
+
+.containerBestProjects > p {
+  font-size: 35px;
+}
+
+.containerBestProjects > h2 {
+  font-size: 70px;
+}
+
+.racesWrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.races {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: var(--gap-texts);
+
+  ul {
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 100px;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+/* Probando */
+
+.thecard {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  height: 35vh;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #F5ECC9;
+  color: #3a3939;
+  padding:40px;
+
+  .fondoImagenWork {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ICSE.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    color: #3a3939;
+
+    .descripcionWork {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      .titleWork {
+        width: 95%;
+        padding-top: 10px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          line-height: 100%;
+          font-family: "Montserrat";
+          font-size: calc(var(--title-size) * 0.2);
+        }
+
+        p {
+          font-family: "Montserrat";
+          font-weight: bold;
+          padding: 10px 20px 10px 20px;
+          border: 2px solid #3a3939;
+          border-radius: 16px;
+        }
+      }
+
+      .detailWork {
+        width: 95%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-image: url(../images/icse.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.lastCard {
+  .thefront {
+    .fondoImagenWork {
+      height: 100%;
+      background-image: none;
+      background-color: #131313;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      color: #3a3939;
+      font-size: calc(var(--title-size) * 0.3);
+    }
+  }
+
+  .descripcionWork {
+    height: 0%;
+    display: none;
+  }
+}
+
+.lastCard:hover {
+  transform: none;
+}
+
+/* Fin Probando Servicios */
+
+/* ------------------------------------------- */
+
+/* Nuestros Servicios  */
+
+.nuestrosServicios {
+  margin-top: 10vh;
+  height: auto;
+}
+
+.contenidoNuestrosServicios {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.tituloServicios {
+  font-family: "Montserrat";
+  color: #3a3939;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tituloServicios > span {
+  font-size: 35px;
+}
+
+.tituloServicios > h2 {
+  font-size: 70px;
+}
+
+.servicios {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+
+.servicio {
+  width: 25%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+  font-family: "Montserrat";
+  color: #3a3939;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circulo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #6F6E6E;
+}
+
+.fila > img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Fin Nuestros Servicios */
