@@ -17,10 +17,56 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/public/styles/style.css" />
+    <link rel="stylesheet" href="public/styles/style.css" />
     <title>Diffio</title>
   </head>
   <body>
+
+    <header class="header">
+      <div class="contenedorHeader">
+        <a href="#" class="contenedorLogo">
+          <img src="public/images/logo.svg" alt="Logo Diffio - desarrolladores web">
+        </a>
+        <div class="contenedorNav">
+          <a href="#Contacto">Contactanos</a>
+          <button id="botonNav">
+            <img src="public/images/menu.png" alt="Menu">
+          </button>
+
+          <nav class="contenedorMenu" id="nav">
+            <div class="containerCerrar" id="botonCerrar">
+              <i class="fa-solid fa-x"></i>
+              close
+            </div>
+            <ul>
+              <li><a href="#">Nosotros <img src="public/images/ArrowInclinada.svg" alt=""></a></li>
+              <li><a href="#">Servicios <img src="public/images/ArrowInclinada.svg" alt=""></a></li>
+              <li><a href="#">Proyectos <img src="public/images/ArrowInclinada.svg" alt=""></a></li>
+              <li><a href="#">Ofrecemos <img src="public/images/ArrowInclinada.svg" alt=""></a></li>
+              <li><a href="#">Contacto <img src="public/images/ArrowInclinada.svg" alt=""></a></li>
+            </ul>
+            <ul>
+              <li><a href="#">UpWork</a></li>
+              <li><a href="#">Fiverr</a></li>
+              <li><a href="#">Linkedin</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="seccionPrincipal">
+      <div class="contenidoPrincipal">
+        <img src="public/images/logo.svg" alt="Logo Diffio - desarrolladores web">
+        <p>
+          Creamos experiencias digitales Differentes.
+        </p>
+        <div class="flechaBajar">
+          <img src="public/images/FlechaHeader.svg" alt="Flecha para bajar a la siguiente sección">
+        </div>
+      </div>
+    </section>
+
     <section class="quienesSomos">
       <div class="contenidoQuienesSomos">
         <h2>Quienes somos?</h2>
@@ -81,7 +127,7 @@
                     <div class="fondoImagenWork">
                       <div class="fila">
                         <div class="circulo"></div>
-                        <img src="/public/images/arrow.png" alt="" />
+                        <img src="public/images/arrow.png" alt="" />
                       </div>
                       <div class="fila"><h3>Desarrollo Web</h3></div>
                     </div>
@@ -98,7 +144,7 @@
                     <div class="fondoImagenWork">
                       <div class="fila">
                         <div class="circulo"></div>
-                        <img src="/public/images/arrow.png" alt="" />
+                        <img src="public/images/arrow.png" alt="" />
                       </div>
                       <div class="fila"><h3>Diseño Web</h3></div>
                     </div>
@@ -115,7 +161,7 @@
                     <div class="fondoImagenWork">
                       <div class="fila">
                         <div class="circulo"></div>
-                        <img src="/public/images/arrow.png" alt="" />
+                        <img src="public/images/arrow.png" alt="" />
                       </div>
                       <div class="fila"><h3>Mantenimiento y Soporte</h3></div>
                     </div>
@@ -175,7 +221,7 @@
 
         <div class="itemProyecto">
           <div class="imagenFondo">
-            <img src="/public/images/arrow.png" alt="" />
+            <img src="public/images/arrow.png" alt="" />
           </div>
           <div class="descripcionProyecto">
             <p class="nombreProyecto">Nombre Proyecto</p>
@@ -227,7 +273,8 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
-    <script src="/public/scripts/scrollHorizontalGSAP.js"></script>
-    <script src="/public/scripts/gsapAndLenis.js"></script>
+    <script src="public/scripts/scrollHorizontalGSAP.js"></script>
+    <script src="public/scripts/gsapAndLenis.js"></script>
+    <script src="public/scripts/menu.js"></script>
   </body>
 </html>
