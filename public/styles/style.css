@@ -54,6 +54,7 @@
 
 body {
   background-color: #f1f1f1;
+  overflow-x: hidden;
 }
 
 /* Quienes Somos */
@@ -161,24 +162,11 @@ body {
   gap: var(--gap-texts);
   font-family: "Montserrat";
   color: #3a3939;
-
-  /* h2 {
-    font-family: "MonumentExtended", "sans-serif";
-    font-size: calc(var(--title-size) * 1);
-    font-weight: bold;
-    color:#3a3939;
-    line-height: 82%;
-  }
-
-  p {
-    font-family: "Space Grotesk", "sans-serif";
-    font-size: calc(var(--title-size) * 0.3);
-    color:#3a3939;
-  } */
 }
 
 .containerBestProjects > p {
   font-size: 35px;
+  color: #6F6E6E;
 }
 
 .containerBestProjects > h2 {
@@ -195,17 +183,17 @@ body {
   display: flex;
   flex-wrap: nowrap;
   margin-top: var(--gap-texts);
+}
 
-  ul {
-    width: fit-content;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 100px;
+.races > ul {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 100px;
+}
 
-    li {
-      list-style: none;
-    }
-  }
+.races > ul > li {
+  list-style: none;
 }
 
 /* Probando */
@@ -238,9 +226,9 @@ body {
   border-radius: 20px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #F5ECC9;
+  background: #f5ecc9;
   color: #3a3939;
-  padding:40px;
+  padding: 40px;
 
   .fondoImagenWork {
     width: 100%;
@@ -252,42 +240,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: "Montserrat";
-    color: #3a3939;
-
-    .descripcionWork {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
-
-      .titleWork {
-        width: 95%;
-        padding-top: 10px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        h3 {
-          line-height: 100%;
-          font-family: "Montserrat";
-          font-size: calc(var(--title-size) * 0.2);
-        }
-
-        p {
-          font-family: "Montserrat";
-          font-weight: bold;
-          padding: 10px 20px 10px 20px;
-          border: 2px solid #3a3939;
-          border-radius: 16px;
-        }
-      }
-
-      .detailWork {
-        width: 95%;
-        margin: auto;
-      }
-    }
   }
 }
 
@@ -334,58 +286,6 @@ body {
   transform: none;
 }
 
-/* Fin Probando Servicios */
-
-/* ------------------------------------------- */
-
-/* Nuestros Servicios  */
-
-.nuestrosServicios {
-  margin-top: 10vh;
-  height: auto;
-}
-
-.contenidoNuestrosServicios {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-}
-
-.tituloServicios {
-  font-family: "Montserrat";
-  color: #3a3939;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.tituloServicios > span {
-  font-size: 35px;
-}
-
-.tituloServicios > h2 {
-  font-size: 70px;
-}
-
-.servicios {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 3vw;
-}
-
-.servicio {
-  width: 25%;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 15vh;
-  font-family: "Montserrat";
-  color: #3a3939;
-}
-
 .fila {
   display: flex;
   justify-content: space-between;
@@ -395,7 +295,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #6F6E6E;
+  border: 1px solid #6f6e6e;
 }
 
 .fila > img {
@@ -403,4 +303,108 @@ body {
   height: 30px;
 }
 
-/* Fin Nuestros Servicios */
+.fila > h3{
+  font-family: 'Space Grotesk';
+  font-size: 35px;
+  font-weight: lighter;
+  color:#6F6E6E;
+}
+
+/* Fin Probando Servicios */
+
+/* ------------------------------------------- */
+
+/* Proyectos  */
+
+.proyectos{
+  margin-top: 10vh;
+  height: auto;
+}
+
+.contenidoProyectos{
+  width: 90%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  gap:5vh;
+}
+
+.tituloProyectos > h2{
+  font-family: "Montserrat";
+  color:#3a3939;
+  font-size: 70px;
+}
+
+.itemProyecto{
+  width: 40vw;
+  height: 60vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:20px;
+}
+
+.imagenFondo{
+  width: 100%;
+  height: 90%;
+  text-align: right;
+  background-image: url(/public/images/fondoPerrito.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.imagenFondo > img{
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.descripcionProyecto{
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+}
+
+.nombreProyecto{
+  color:#3A3939;
+}
+
+.tipoProyecto{
+  color:#F4D089;
+  width: fit-content;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+  border:1px solid #F4D089;
+}
+
+.proyectoDerecha{
+  align-self: self-end;
+}
+
+.verMas{
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.verMas > button{
+  background-color: #FBAE17;
+  font-size: 20px;
+  color:#3A3939;
+  border:none;
+  font-family: "Inter";
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Fin Proyectos */
