@@ -1,0 +1,354 @@
+/* Estilos Generales */
+@font-face {
+    font-family: 'neue-montreal';
+    src: url('public\images\neue-montreal-free-demo-pangram-pangram-030418 (1)\NeueMontreal-Regular.otf') format('opentype');
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "neue-montreal", sans-serif;
+}
+body {
+    background-color: black;
+}
+/* Fin estilos generales */
+
+
+
+/* NAV */
+.nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 35px 0 0 0 ;
+}
+.nav ul {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.nav ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+.nav ul li a {
+    text-decoration: none;
+}
+/* FIN NAV */
+
+
+
+
+/* INICIO MAIN */
+.main {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+.contenido-main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenido-main .titulo-principal {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-main .titulo-principal svg {
+    width: 76%;
+    height: auto;
+}
+.contenido-main .contenedor-subtitulos {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+}
+.contenido-main .contenedor-subtitulos h3:nth-child(2) {
+    border: 1px grey solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* FIN MAIN */
+
+
+
+/* QUIENES SOMOS */
+.quienes-somos {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 12% 0 ;
+    display: flex;
+    align-items: center;
+}
+.contenido-quienes-somos {
+    width: 85%;
+    margin: auto;
+}
+.contenido-quienes-somos h2 {
+    font-size: 5.5rem;
+    font-family: "neue-montreal", sans-serif;
+}
+/* FIN QUIENES SOMOS */
+
+
+
+
+
+/* NUESTROS SERVICIOS */
+.nuestros-servicios {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 12% 0 ;
+    display: flex;
+    align-items: center;
+}
+.contenido-servicios {
+    width: 85%;
+    margin: auto;
+}
+.contenido-servicios .titulo-proyectos {
+    border: 1px white solid;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 7px;
+    margin: 50px 0;
+}
+.contenido-servicios .contenedor-servicios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px 0 0;
+}
+.contenido-servicios .contenedor-servicios .servicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.contenido-servicios .contenedor-servicios .servicio .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 240px;
+    background-color: rgba(107, 107, 107, 0.603);
+    height: 500px;
+    width: 280px;
+    z-index: 1;
+}
+.contenido-servicios .contenedor-servicios .servicio .texto svg {
+    width: 90%;
+}
+.contenido-servicios .contenedor-servicios .servicio .fondo {
+    border-radius: 240px;
+    height: 500px;
+    width: 280px;
+    position: absolute;
+    left: 80px;
+    bottom: 50px;
+}
+.contenido-servicios .contenedor-servicios .servicio .fondo img {
+    border-radius: 240px;
+    height: 100%;
+}
+/* FIN NUESTROS SERVICIOS */
+
+
+
+
+
+
+/* NUESTROS PROYECTOS */
+.nuestros-proyectos {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 12% 0 ;
+    display: flex;
+    align-items: center;
+}
+.contenido-nuestros-proyectos {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 35px;
+    background-color: rgba(48, 48, 48, 0.582);
+}
+.contenido-nuestros-proyectos .titulo-proyectos {
+    border: 1px white solid;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 7px;
+    margin: 15px 0;
+}
+.contenido-nuestros-proyectos .contenedor-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.contenido-nuestros-proyectos .contenedor-proyectos .proyecto {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    /* margin: auto; */
+}
+.contenido-nuestros-proyectos .contenedor-proyectos .proyecto .contenedor-img-proyecto {
+    border: 1px white solid;
+    border-radius: 30px;
+    width: 100%;
+    height: fill;
+    padding: 10px;
+}
+.contenido-nuestros-proyectos .contenedor-proyectos .proyecto .contenedor-titulo-proyecto {
+    width: 20%;
+    height: 100%;
+}
+.contenido-nuestros-proyectos .contenedor-proyectos .proyecto .contenedor-titulo-proyecto svg {
+    height: 550px;
+}
+/* FIN NUESTROS PROYECTOS */
+
+
+
+
+/* NUESTROS PILARES */
+.pilares {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 12% 0 ;
+    display: flex;
+    align-items: center;
+}
+.contenido-pilares {
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    
+    margin: auto;
+}
+.contenido-pilares .container-titulo {
+    width: 50%;
+    font-size: 3.2rem;
+}
+.contenido-pilares .container-figura3D {
+    width: 50%;
+}
+/* FIN NUESTROS PILARES */
+
+
+
+/* CONTACTO */
+.contacto {
+    width: 100%;
+    height: 100%;
+    /* padding: 0 0 12% 0 ; */
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 5%;
+    background-color: rgba(48, 48, 48, 0.582);
+}
+.contenido-contacto h1 {
+    width: 55%;
+    font-size: 4.3rem;
+    padding-bottom: 35px;
+}
+.contenido-contacto form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contenido-contacto form div {
+    display: flex;
+    justify-content: space-between;
+}
+.contenido-contacto form div input {
+    width: 47%;
+    display: flex;
+    margin: 24px 0;
+    padding: 28px 18px;
+    border-radius: 12px;
+    border: none;
+    background-color: #ebebeb93;
+}
+.contenido-contacto form div textarea {
+    width: 100%;
+    display: flex;
+    margin: 24px 0;
+    padding: 28px 18px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ebebeb93;
+    resize: none;
+}
+.contenido-contacto form div input::placeholder, .contenido-contacto form div textarea::placeholder {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+}
+.contenido-contacto form button {
+    background-color: #792D16;
+    color: white;
+    padding: 24px;
+    margin: 48px 0 0 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    
+}
+/* FIN CONTACTO */
+
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.contenido-footer {
+    width: 85%;
+    padding: 80px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-top: #792D16 1px solid;
+}
+.contenido-footer .derechos-autor {
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: #792D16 1px solid;
+}
+/* FIN FOOTER */
