@@ -1,15 +1,14 @@
 /* Estilos Generales */
 @font-face {
-    font-family: 'neue-montreal';
-    src: url('public\images\neue-montreal-free-demo-pangram-pangram-030418 (1)\NeueMontreal-Regular.otf') format('opentype');
-
+    font-family: "NeueMontreal";
+    src: url(../fonts/NeueMontreal/NeueMontreal-Medium.otf);
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: white;
-    font-family: "neue-montreal", sans-serif;
+    font-family: "NeueMontreal", sans-serif;
 }
 body {
     background-color: black;
@@ -98,7 +97,7 @@ body {
 }
 .contenido-quienes-somos h2 {
     font-size: 5.5rem;
-    font-family: "neue-montreal", sans-serif;
+    font-family: "NeueMontreal", sans-serif;
 }
 /* FIN QUIENES SOMOS */
 
