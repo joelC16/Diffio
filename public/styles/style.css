@@ -1,353 +1,575 @@
 /* Estilos Generales */
 @font-face {
-    font-family: "NeueMontreal";
-    src: url(../fonts/NeueMontreal/NeueMontreal-Medium.otf);
+  font-family: "NeueMontreal";
+  src: url(../fonts/NeueMontreal/NeueMontreal-Medium.otf);
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "NeueMontreal", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "NeueMontreal", sans-serif;
 }
 body {
-    background-color: black;
+  background-color: black;
 }
 /* Fin estilos generales */
 
+.ellipse {
+  position: absolute;
+  z-index: -1;
+}
 
+.ellipseQuienesSomos {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
 
 /* NAV */
 .nav {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    padding: 35px 0 0 0 ;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 35px 0 0 0;
 }
 .nav ul {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
 }
 .nav ul li {
-    list-style: none;
-    padding: 5px 0;
+  list-style: none;
+  padding: 5px 0;
 }
 .nav ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 /* FIN NAV */
 
-
-
-
 /* INICIO MAIN */
 .main {
-    width: 100%;
-    height: 100vh;
-    margin: auto;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
 }
 .contenido-main {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .contenido-main .titulo-principal {
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contenido-main .titulo-principal svg {
-    width: 76%;
-    height: auto;
+  width: 76%;
+  height: auto;
 }
 .contenido-main .contenedor-subtitulos {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30%;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 20%;
 }
 .contenido-main .contenedor-subtitulos h3:nth-child(2) {
-    border: 1px grey solid;
-    border-radius: 10px;
-    padding: 10px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  padding: 10px;
 }
 /* FIN MAIN */
 
-
-
 /* QUIENES SOMOS */
 .quienes-somos {
-    width: 100%;
-    height: 100%;
-    padding: 0 0 12% 0 ;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 12% 0;
+  display: flex;
+  align-items: center;
 }
 .contenido-quienes-somos {
-    width: 85%;
-    margin: auto;
+  width: 85%;
+  margin: auto;
 }
 .contenido-quienes-somos h2 {
-    font-size: 5.5rem;
-    font-family: "NeueMontreal", sans-serif;
+  font-size: 6rem;
+  font-family: "NeueMontreal", sans-serif;
 }
 /* FIN QUIENES SOMOS */
 
-
-
-
-
 /* NUESTROS SERVICIOS */
 .nuestros-servicios {
-    width: 100%;
-    height: 100%;
-    padding: 0 0 12% 0 ;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 12% 0;
+  display: flex;
+  align-items: center;
 }
 .contenido-servicios {
-    width: 85%;
-    margin: auto;
+  width: 85%;
+  margin: auto;
 }
 .contenido-servicios .titulo-proyectos {
-    border: 1px white solid;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 7px;
-    margin: 50px 0;
+  border: 1px white solid;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 7px;
+  margin: 50px 0;
 }
 .contenido-servicios .contenedor-servicios {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 80px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px 0 0;
 }
 .contenido-servicios .contenedor-servicios .servicio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .contenido-servicios .contenedor-servicios .servicio .texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    border-radius: 240px;
-    background-color: rgba(107, 107, 107, 0.603);
-    height: 500px;
-    width: 280px;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  border-radius: 240px;
+  background-color: rgba(107, 107, 107, 0.603);
+  height: 500px;
+  width: 280px;
+  z-index: 1;
 }
 .contenido-servicios .contenedor-servicios .servicio .texto svg {
-    width: 90%;
+  width: 90%;
 }
 .contenido-servicios .contenedor-servicios .servicio .fondo {
-    border-radius: 240px;
-    height: 500px;
-    width: 280px;
-    position: absolute;
-    left: 80px;
-    bottom: 50px;
+  border-radius: 240px;
+  height: 500px;
+  width: 280px;
+  position: absolute;
+  left: 80px;
+  bottom: 50px;
 }
 .contenido-servicios .contenedor-servicios .servicio .fondo img {
-    border-radius: 240px;
-    height: 100%;
+  border-radius: 240px;
+  height: 100%;
 }
 /* FIN NUESTROS SERVICIOS */
 
-
-
-
-
-
 /* NUESTROS PROYECTOS */
 .nuestros-proyectos {
-    width: 100%;
-    height: 100%;
-    padding: 0 0 12% 0 ;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 12% 0;
+  display: flex;
+  align-items: center;
 }
 .contenido-nuestros-proyectos {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px;
-    padding: 35px;
-    background-color: rgba(48, 48, 48, 0.582);
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 35px;
+  gap: 5vh;
 }
 .contenido-nuestros-proyectos .titulo-proyectos {
-    border: 1px white solid;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 7px;
-    margin: 15px 0;
+  border: 1px white solid;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 7px;
+  margin: 15px 0;
 }
 .contenido-nuestros-proyectos .contenedor-proyectos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
 }
 .contenido-nuestros-proyectos .contenedor-proyectos .proyecto {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    gap: 10px;
-    /* margin: auto; */
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  gap: 10px;
+  /* margin: auto; */
 }
-.contenido-nuestros-proyectos .contenedor-proyectos .proyecto .contenedor-img-proyecto {
-    border: 1px white solid;
-    border-radius: 30px;
-    width: 100%;
-    height: fill;
-    padding: 10px;
+.contenido-nuestros-proyectos
+  .contenedor-proyectos
+  .proyecto
+  .contenedor-img-proyecto {
+  border: 1px white solid;
+  border-radius: 30px;
+  width: 100%;
+  height: fill;
+  padding: 10px;
 }
-.contenido-nuestros-proyectos .contenedor-proyectos .proyecto .contenedor-titulo-proyecto {
-    width: 20%;
-    height: 100%;
+.contenido-nuestros-proyectos
+  .contenedor-proyectos
+  .proyecto
+  .contenedor-titulo-proyecto {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
 }
-.contenido-nuestros-proyectos .contenedor-proyectos .proyecto .contenedor-titulo-proyecto svg {
-    height: 550px;
+
+.contenedor-titulo-proyecto-medio {
+  justify-content: start !important;
+}
+
+.contenido-nuestros-proyectos
+  .contenedor-proyectos
+  .proyecto
+  .contenedor-titulo-proyecto
+  svg {
+  height: 550px;
 }
 /* FIN NUESTROS PROYECTOS */
 
-
-
-
 /* NUESTROS PILARES */
 .pilares {
-    width: 100%;
-    height: 100%;
-    padding: 0 0 12% 0 ;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 12% 0;
+  display: flex;
+  align-items: center;
 }
 .contenido-pilares {
-    width: 85%;
-    height: 100vh;
-    display: flex;
-    
-    margin: auto;
+  width: 85%;
+  height: 100vh;
+  display: flex;
+
+  margin: auto;
 }
 .contenido-pilares .container-titulo {
-    width: 50%;
-    font-size: 3.2rem;
+  width: 50%;
+  font-size: 3.2rem;
 }
 .contenido-pilares .container-figura3D {
-    width: 50%;
+  width: 50%;
 }
 /* FIN NUESTROS PILARES */
 
-
-
 /* CONTACTO */
 .contacto {
-    width: 100%;
-    height: 100%;
-    /* padding: 0 0 12% 0 ; */
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  /* padding: 0 0 12% 0 ; */
+  display: flex;
+  align-items: center;
 }
 .contenido-contacto {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px;
-    padding: 5%;
-    background-color: rgba(48, 48, 48, 0.582);
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 5%;
+  background-color: rgba(48, 48, 48, 0.582);
 }
 .contenido-contacto h1 {
-    width: 55%;
-    font-size: 4.3rem;
-    padding-bottom: 35px;
+  width: 55%;
+  font-size: 4.3rem;
+  padding-bottom: 35px;
 }
 .contenido-contacto form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .contenido-contacto form div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .contenido-contacto form div input {
-    width: 47%;
-    display: flex;
-    margin: 24px 0;
-    padding: 28px 18px;
-    border-radius: 12px;
-    border: none;
-    background-color: #ebebeb93;
+  width: 47%;
+  display: flex;
+  margin: 24px 0;
+  padding: 28px 18px;
+  border-radius: 12px;
+  border: none;
+  background-color: #ebebeb93;
 }
 .contenido-contacto form div textarea {
-    width: 100%;
-    display: flex;
-    margin: 24px 0;
-    padding: 28px 18px;
-    border-radius: 15px;
-    border: none;
-    background-color: #ebebeb93;
-    resize: none;
+  width: 100%;
+  display: flex;
+  margin: 24px 0;
+  padding: 28px 18px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ebebeb93;
+  resize: none;
 }
-.contenido-contacto form div input::placeholder, .contenido-contacto form div textarea::placeholder {
-    color: white;
-    font-size: 1.3rem;
-    padding: 0;
-    margin: 0;
+.contenido-contacto form div input::placeholder,
+.contenido-contacto form div textarea::placeholder {
+  color: white;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
 }
 .contenido-contacto form button {
-    background-color: #792D16;
-    color: white;
-    padding: 24px;
-    margin: 48px 0 0 0;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.3rem;
-    
+  background-color: #792d16;
+  color: white;
+  padding: 24px;
+  margin: 48px 0 0 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.3rem;
 }
 /* FIN CONTACTO */
 
+/* BLOG */
 
+/* Blog */
+.descripcionBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
 
-/* FOOTER */
-.footer {
-    width: 100%;
-    height: 100%;
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
+.blogs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
 }
-.contenido-footer {
-    width: 85%;
-    padding: 80px 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    border-top: #792D16 1px solid;
+
+.cartaBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 31%;
+  border-radius: 16px;
+  padding: 10px;
+  border: 1px solid var(--color-bordes);
 }
-.contenido-footer .derechos-autor {
-    margin: auto;
-    width: fit-content;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    border-top: #792D16 1px solid;
+
+.contenedorImagen {
+  width: 100%;
+  height: 35vh;
+  background-color: rebeccapurple;
+  border-radius: 16px;
+  background-image: url(../images/notebookDiffio.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* FIN FOOTER */
+
+.descripcionNotaBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-textos-gris);
+}
+
+.categoriaBlog {
+  font-size: 1rem !important;
+  padding: 10px;
+  border: 2px solid var(--color-bordes);
+  border-radius: 16px;
+}
+
+.fechaBlog {
+  font-size: 1rem !important;
+}
+
+.descripcionNotaBlog > h4 {
+  color: var(--color-textos-gris);
+}
+
+.descripcionNotaBlog > a {
+  margin-top: 2vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--color-textos-gris);
+}
+
+/* Fin blog */
+
+/* FIN BLOG */
+
+/* Preguntas FAQ */
+
+.seccion {
+  height: auto;
+  margin-top: 10vh;
+}
+
+.contenido {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  gap: 4vh;
+}
+
+.columnasFAQ {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primerColumnaFAQ {
+  width: 30%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  font-family: "NeueMontreal";
+}
+
+.primerColumnaFAQ > h3 {
+  font-size: 2rem;
+}
+
+.primerColumnaFAQ > p {
+  font-size: 1.5rem;
+}
+
+.segundaColumnaFAQ {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.pregunta {
+  padding: 20px 18px;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.parteVisiblePregunta {
+  display: flex;
+  gap: 20px;
+  font-family: "NeueMontreal";
+  align-items: center;
+  font-size: 20px;
+}
+
+.parteNoVisiblePregunta {
+  display: none;
+  opacity: 0;
+}
+
+.parteNoVisiblePreguntaDisplayBlock {
+  display: block;
+  opacity: 1;
+  padding-left: 40px;
+  font-family: "NeueMontreal";
+}
+
+.abrirPregunta {
+  font-size: 15px !important;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.rotar-45 {
+  transform: rotate(45deg);
+}
+/* Fin Preguntas FAQ */
+
+/* Footer */
+
+.filas {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding-bottom: 5vh;
+}
+
+.primerFila {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primerColumnaFila1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "NeueMontreal";
+  text-align: left;
+}
+
+.logoFooter {
+  text-align: left !important;
+  font-family: "NeueMontreal";
+  text-decoration: none;
+}
+
+.logoFooter > p {
+  font-family: "NeueMontreal";
+  font-size: 30px;
+  color: var(--color-texto-hover);
+}
+
+.descripFooter {
+  font-size: 1rem;
+}
+
+.segundaColumnaFila1 {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+
+.segundaColumnaFila1 > a {
+  color: #101010;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.segundaColumnaFila1 > p {
+  color: #101010;
+  font-family: "NeueMontreal";
+}
+
+.segundaFila {
+  display: flex;
+}
+
+.primerColumnaFila2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "NeueMontreal";
+  font-size: 1.2rem;
+  gap: 2vh;
+}
+
+.primerFilaPrimerColumnaFila2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emailFooter {
+  color: var(--color-textos-gris);
+}
+
+.segundaFilaPrimerColumnaFila2 {
+  color: var(--color-textos-gris);
+}
+
+/* Fin Footer */
