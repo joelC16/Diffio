@@ -26,13 +26,3 @@ botonAbrirPregunta.forEach((boton, index) => {
     boton.classList.toggle("rotar-45");
   });
 });
-
-window.addEventListener("scroll", function () {
-  var header = document.getElementById("scrollingHeader");
-  var scrollTop = window.scrollY;
-  var gradientSpeed = 3; // Ajusta este valor para cambiar la velocidad del gradiente
-
-  var gradientDirection = scrollTop * gradientSpeed;
-
-  header.style.backgroundImage = `linear-gradient(to left, var(--color-texto-hover), var(--color-textos-gris) ${gradientDirection}px)`;
-});

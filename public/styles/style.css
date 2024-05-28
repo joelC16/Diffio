@@ -23,6 +23,7 @@ body {
 .ellipseQuienesSomos {
   position: absolute;
   left: 0;
+  z-index: -1;
   width: 100%;
 }
 
@@ -91,17 +92,46 @@ body {
 .quienes-somos {
   width: 100%;
   height: 100%;
-  padding: 0 0 12% 0;
+  padding: 0 0 10% 0;
   display: flex;
   align-items: center;
 }
 .contenido-quienes-somos {
   width: 85%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 .contenido-quienes-somos h2 {
   font-size: 6rem;
   font-family: "NeueMontreal", sans-serif;
+}
+
+.contenido-quienes-somos p {
+  font-size: 1.5rem;
+  font-family: "NeueMontreal", sans-serif;
+}
+
+.contenido-quienes-somos > .buttonAboutUs {
+  width: 20%;
+  min-height: 2.875rem;
+  border-radius: 8px;
+  border: 1px grey solid;
+  align-self: flex-end;
+  background-color: transparent;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonAboutUs > h3 {
+  color: #f2f2f2;
+}
+
+.buttonAboutUs > img {
+  width: 30px;
 }
 /* FIN QUIENES SOMOS */
 
@@ -109,7 +139,7 @@ body {
 .nuestros-servicios {
   width: 100%;
   height: 100%;
-  padding: 0 0 12% 0;
+  padding: 0 0 10% 0;
   display: flex;
   align-items: center;
 }
@@ -126,10 +156,61 @@ body {
 }
 .contenido-servicios .contenedor-servicios {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 5vh;
   padding: 50px 80px 0 0;
 }
+
+.contenedor-servicios > h3 {
+  font-size: 3rem;
+}
+
+.servicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px #474747 solid;
+  width: 100%;
+}
+.servicio h2 {
+  font-size: 5rem;
+  color: #f2f2f2;
+}
+.servicio img {
+  width: 50px;
+}
+.servicioTexto {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.servicioTexto p {
+  margin: 15px 0 0 0;
+  width: 50%;
+  font-size: 1.4rem;
+  color: #f2f2f2;
+}
+.servicioTexto .contenidoEspecificacion {
+  width: 50%;
+}
+.servicioTexto .contenidoEspecificacion h4 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.9rem;
+  border-bottom: 1px #474747 solid;
+  color: #f2f2f2;
+}
+.servicioTexto .contenidoEspecificacion h4:last-child {
+  border-bottom: none;
+}
+
+/* 
 .contenido-servicios .contenedor-servicios .servicio {
   display: flex;
   align-items: center;
@@ -163,14 +244,14 @@ body {
 .contenido-servicios .contenedor-servicios .servicio .fondo img {
   border-radius: 240px;
   height: 100%;
-}
+} */
 /* FIN NUESTROS SERVICIOS */
 
 /* NUESTROS PROYECTOS */
 .nuestros-proyectos {
   width: 100%;
   height: 100%;
-  padding: 0 0 12% 0;
+  padding: 0 0 10% 0;
   display: flex;
   align-items: center;
 }
@@ -241,7 +322,7 @@ body {
 .pilares {
   width: 100%;
   height: 100%;
-  padding: 0 0 12% 0;
+  padding: 0 0 10% 0;
   display: flex;
   align-items: center;
 }
