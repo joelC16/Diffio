@@ -7,7 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: white;
+  color: #f2f2f2;
   font-family: "NeueMontreal", sans-serif;
 }
 body {
@@ -325,6 +325,10 @@ body {
   padding: 0 0 10% 0;
   display: flex;
   align-items: center;
+  padding-top: 120px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #4b1c0e;
 }
 .contenido-pilares {
   width: 85%;
@@ -337,6 +341,11 @@ body {
   width: 50%;
   font-size: 3.2rem;
 }
+
+.container-titulo > p {
+  color: #101010 !important;
+}
+
 .contenido-pilares .container-figura3D {
   width: 50%;
 }
@@ -492,7 +501,6 @@ body {
 
 .seccion {
   height: auto;
-  margin-top: 10vh;
 }
 
 .contenido {
@@ -502,6 +510,10 @@ body {
   flex-direction: column;
   padding-top: 15px;
   gap: 4vh;
+}
+
+.preguntasFAQ{
+  background-color: #4b1c0e;
 }
 
 .columnasFAQ {
@@ -574,6 +586,10 @@ body {
 
 /* Footer */
 
+footer{
+  background-color: #4b1c0e;
+}
+
 .filas {
   display: flex;
   flex-direction: column;
@@ -623,7 +639,7 @@ body {
 }
 
 .segundaColumnaFila1 > p {
-  color: #101010;
+  color: #f2f2f2;
   font-family: "NeueMontreal";
 }
 
